@@ -21,4 +21,11 @@ public class Manager extends Pekerja{
         // TODO Auto-generated method stub
         return super.getTunjangan() + ((10.0/100) * getGaji());
     }
+
+    public String toString(){
+        return(
+            super.toString() +
+            "\ndepartemen\t: " + this.departemen
+        );
+    }
 }

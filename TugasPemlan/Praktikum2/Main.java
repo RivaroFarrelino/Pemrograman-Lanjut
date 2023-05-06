@@ -188,5 +188,7 @@ public class Main {
 
         System.out.println("==========Hasil copy buku baru==========");
         bukuCopy.display();
+
+        input.close();
     }      
 }
