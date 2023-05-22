@@ -58,12 +58,12 @@ public class Employee implements Payable {
         System.out.println("Employee name\t\t: " + this.name);
         System.out.println("Registration number\t: " + this.registrationNumber);
         System.out.println("Monthly salary\t\t: " + this.salaryPerMonth);
-        System.out.println("--------------------Invoice--------------------");
+        System.out.println("----------------------------------------Invoice----------------------------------------");
         System.out.print("Product name\t\tQuantity\tPrice per item\t\tSubtotal per item");
         for(Invoice e : getInvoices()){
             System.out.printf("\n%10s\t\t%5d\t\t%8d\t\t%10d", e.getProductName(), e.getQuantity(), e.getPricePerItem(), e.getQuantity() * e.getPricePerItem());
         }
-        System.out.print("\n----------------------------------------");
+        System.out.print("\n-----------------------------------------------------------------------------------");
         System.out.printf("\nAfter the pay cut\t: %.0f", this.getPayableAmount());
     }
 }
