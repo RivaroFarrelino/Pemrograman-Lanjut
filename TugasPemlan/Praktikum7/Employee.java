@@ -55,7 +55,7 @@ public class Employee implements Payable {
     }
 
     public void display(){
-        System.out.println("Employee name\t\t: " + this.name);
+        System.out.println("\n\nEmployee name\t\t: " + this.name);
         System.out.println("Registration number\t: " + this.registrationNumber);
         System.out.println("Monthly salary\t\t: " + this.salaryPerMonth);
         System.out.println("----------------------------------------Invoice----------------------------------------");
